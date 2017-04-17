@@ -1,0 +1,92 @@
+body {
+
+  /*background: url('https://i.ytimg.com/vi/Cz_XFY6CZ1c/maxresdefault.jpg') no-repeat right bottom;*/
+    /*background-size: 300px 400px;*/
+   /*
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+   */
+    /*background-position: 0 50%*/
+}
+
+@media screen and (min-width: 980px){
+
+  body {
+    background: url('https://i.ytimg.com/vi/Cz_XFY6CZ1c/maxresdefault.jpg') no-repeat right bottom;
+    background-size: 300px 400px;
+   /*
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+   */
+    background-position: 0 50%
+  }
+}
+
+
+.h1, .h2, .h3, h1, h2, h3 {
+  margin: 0;
+}
+
+
+nav.navbar {
+  text-align:center; 
+  font-size: xx-large; 
+  font-weight: 900;
+  margin-bottom: 0px;
+}
+
+.navbar-header {
+  color: red;
+}
+
+.navbar-right{
+  margin-right: 0;
+}
+
+.container.text-center{
+   padding-right:20px;  
+   margin-left:15%;
+}
+
+.game-main {
+  margin-top: 40px;
+}
+.game-main #word-box {
+  text-align: center;
+} 
+
+.game-main #word-box pre{
+  margin: 0;
+    padding: 0;
+    border: none;
+    font-size: inherit;
+}
+
+span#hangman-word-to-guess{
+  white-space: pre;
+}
+
+.key-pressed {
+  margin: 5px;
+}
+    
+
+#category {
+  text-align: center;
+}
+
+.sidenav {
+  background-color:rgba(169, 163, 66, 0.5);
+}
+
+/*
+.well {
+  background: url('assets/images/1.jpg') no-repeat center center fixed;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          background-size: cover;
+          -o-background-size: cover;
+          height:100%;
+}*/

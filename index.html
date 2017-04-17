@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Mark's Hangman</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <!-- <script type="text/javascript" src="./assets/javascript/game.js"></script> -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    
+    
+  </head>
+  <body>
+    <!-- nav bar starts here -->
+  <nav class="navbar navbar" >
+    <div class="container-fluid">
+      
+      <div class="navbar-header" style="color: red;">
+        <a class="navbar-brand">Hangman </a>
+
+       
+      </div>
+
+      <div class="navbar-right">
+         <button type="button" class="btn btn-default navbar-btn" id="play-btn">Play Game</button>
+         <button type="button" class="btn btn-danger navbar-btn" id="reset-btn">Reset</button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container" >
+    <div class="row game-main">
+      <div class="col-sm-12 col-md-6 col-md-offset-3">
+        
+          <h2 id="category"> 
+            Movies
+          </h2>
+          <!-- <p>empty: <span id="demo"></span> -->
+          
+        
+      </div>  
+
+    </div>
+
+    <div class="row game-main">
+      <div class="col-sm-12 col-md-6 col-md-offset-3">
+        <div class="well">
+          <h2 id="word-box"> 
+            <!-- <pre> -->
+              <span id="hangman-word-to-guess"></span>
+              
+            <!-- </pre> -->
+          </h2>
+          <!-- <p>empty: <span id="demo"></span> -->
+          
+        </div>
+      </div>  
+
+    </div>
+
+    <div class="row game-main">
+      <div class="col-sm-12 col-md-6 col-md-offset-3">
+        <div class="well">
+          <h3 class="text-center">Keys Pressed: 
+            
+          </h3>
+          <p id="keys-pressed">
+           
+            
+          </p>
+        </div>
+      </div>  
+
+    </div> <div class="row game-main">
+      <div class="col-sm-6 col-md-3 col-md-offset-3">
+         <div class="well">
+          <h3 class="text-center">Guesses Left.. 
+          </h3>
+          <p>
+            <span id="remaining"></span>  
+            
+          </p>
+          
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+         <div class="well">
+          <h3 class="text-center">Games Won 
+          </h3>
+          <p>
+            <span id="games-won"></span>  
+            
+          </p>
+          
+        </div>
+      </div>  
+
+    </div>
+
+    <footer class="container-fluid text-right navbar-static-bottom">
+   <p class="copyright">Made By Mark A. A.</p>
+    
+  </footer>
+
+  </div>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script type="text/javascript" src="./assets/javascript/game.js"></script>
+</body>
+</html>
