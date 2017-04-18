@@ -5,9 +5,11 @@ var maskedWord = "";
 var lostGame = "Lets Play";
 var randomWord;
 var letters = {};
+ var matchedIndexes = [];
 var gamesWon = 0;
 var found = false
 var keyArray = [];
+
 // document.getElementById("remaining").innerHTML = triesRemaining;
 // document.getElementById("stat").innerHTML = q;
 // document.getElementById("key").innerHTML = keyArray;
@@ -19,6 +21,7 @@ var gamesWonHTML = document.getElementById("games-won");
 
 
 var playGame = function() {
+    debugger
     console.log("palying game")
     randomWord = words[Math.floor(Math.random() * (words.length))];
     
@@ -89,7 +92,22 @@ function isKeyGuessed(x) {
 }
 
 function getIndexOfGuessedKey(key){
-    return randomWord.toLowerCase().indexOf(key)
+
+   var currKey = key;
+    for(letter in letters){
+        var index = letter;
+        debugger
+        console.log(letters[index].letter);
+
+        var currLetter = letters[index].letter.toLowerCase();
+        if(currLetter == currKey){
+            console.log("Matching key!.. it is..");
+            console.log(index);
+            letters[index].guessed = true;
+        }
+    } 
+
+    return randomWord.toLowerCase().indexOf(key);
 }
 
 document.onkeyup = function(e) {
@@ -121,7 +139,8 @@ document.onkeyup = function(e) {
     // console.log(maskedWord[matchedLetterIndex]);
     console.log(maskedWord)
 
-    letters[matchedLetterIndex].guessed = true;
+    // letters[matchedLetterIndex].guessed = true;
+    // loop through indexes
 
    } else{
     // debugger
